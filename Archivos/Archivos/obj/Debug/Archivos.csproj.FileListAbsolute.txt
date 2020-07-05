@@ -1,0 +1,12 @@
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\bin\Debug\Archivos.exe.config
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\bin\Debug\Archivos.exe
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\bin\Debug\Archivos.pdb
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmEmpleados.resources
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.csproj.GenerateResource.cache
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.exe
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.pdb
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmArchivos.resources
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmHoras.resources
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmCategorias.resources

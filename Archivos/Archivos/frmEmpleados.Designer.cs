@@ -54,12 +54,13 @@
             // 
             // btnReporte
             // 
-            this.btnReporte.Location = new System.Drawing.Point(370, 184);
+            this.btnReporte.Location = new System.Drawing.Point(370, 177);
             this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(75, 23);
+            this.btnReporte.Size = new System.Drawing.Size(75, 54);
             this.btnReporte.TabIndex = 27;
-            this.btnReporte.Text = "Reporte";
+            this.btnReporte.Text = "Reporte General";
             this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
             // btnBaja
             // 
@@ -139,7 +140,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(40, 131);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(314, 147);
+            this.listBox1.Size = new System.Drawing.Size(312, 147);
             this.listBox1.TabIndex = 18;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 

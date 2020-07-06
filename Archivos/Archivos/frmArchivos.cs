@@ -40,5 +40,12 @@ namespace Archivos
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void reporteIndividualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteIndividual frm = new frmReporteIndividual();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

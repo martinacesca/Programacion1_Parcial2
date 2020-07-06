@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmReporteIndividual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteIndividual.Designer.cs">
+      <DependentUpon>frmReporteIndividual.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHoras.resx">
       <DependentUpon>frmHoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteIndividual.resx">
+      <DependentUpon>frmReporteIndividual.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

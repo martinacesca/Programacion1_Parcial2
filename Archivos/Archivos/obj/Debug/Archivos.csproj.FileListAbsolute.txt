@@ -10,3 +10,4 @@ D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\
 D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmArchivos.resources
 D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmHoras.resources
 D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmCategorias.resources
+D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmReporteIndividual.resources

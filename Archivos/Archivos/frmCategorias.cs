@@ -148,7 +148,7 @@ namespace Archivos
         {
             if (!this.CamposValidos()) return;
             string registro = txtCategoria.Text + "|" + txtValor.Text;
-            fileHelper.ModificacionRegistro(listBox1.SelectedIndex, registro);
+            fileHelper.ModificacionRegistro(listBox1.SelectedIndex, registro, false);
             this.Mostrar();
             this.Cancelar();
         }

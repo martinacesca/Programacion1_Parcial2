@@ -61,7 +61,6 @@ namespace Archivos
 
             string linea = lector.ReadLine();
             string[] datos;
-            if (linea != null) datos = linea.Split('|');
             while (linea != null)
             {
                 datos = linea.Split('|');

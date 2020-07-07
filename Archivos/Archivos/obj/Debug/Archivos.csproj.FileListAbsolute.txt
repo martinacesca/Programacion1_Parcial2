@@ -11,3 +11,15 @@ D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\
 D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmHoras.resources
 D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmCategorias.resources
 D:\UAI\Programacion I\Visual\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmReporteIndividual.resources
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\bin\Debug\Archivos.exe.config
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\bin\Debug\Archivos.exe
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmArchivos.resources
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmCategorias.resources
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmEmpleados.resources
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmHoras.resources
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.frmReporteIndividual.resources
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.csproj.GenerateResource.cache
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.exe
+C:\Users\Facundo\Desktop\Programacion1_Parcial2\Archivos\Archivos\obj\Debug\Archivos.pdb

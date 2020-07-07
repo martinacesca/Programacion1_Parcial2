@@ -102,12 +102,11 @@ namespace Archivos
             FileStream archivo = new FileStream("empleados.txt", FileMode.OpenOrCreate);
             StreamReader lector = new StreamReader(archivo);
             string linea = lector.ReadLine();
-            string[] datos = linea.Split('|');
             while (linea != null)
             {
+                string[] datos = linea.Split('|');
                 cmbLegajo.Items.Add(datos[0]);
                 linea = lector.ReadLine();
-                if (linea != null) datos = linea.Split('|');
             }
             lector.Close();
             archivo.Close();
@@ -150,7 +149,7 @@ namespace Archivos
             string[] datos = registro.Split('|');
             this.cmbLegajo.SelectedIndex = this.cmbLegajo.FindStringExact(datos[0]);
             this.cmbDia.SelectedIndex = this.cmbDia.FindStringExact(datos[1]);
-            this.cmbHoras.SelectedIndex = this.cmbDia.FindStringExact(datos[2]);
+            this.cmbHoras.SelectedIndex = this.cmbHoras.FindStringExact(datos[2]);
             this.Editar(true);
         }
         private void Cancelar()
@@ -167,7 +166,7 @@ namespace Archivos
         {
             if (!this.CamposValidos()) return;
             string registro = cmbLegajo.SelectedItem + "|" + cmbDia.SelectedItem + "|" + cmbHoras.SelectedItem;
-            fileHelper.AltaRegistro(registro);
+            fileHelper.AltaRegistroOrdenado(registro);
             this.Mostrar();
             this.Cancelar();
         }
@@ -175,7 +174,7 @@ namespace Archivos
         {
             if (!this.CamposValidos()) return;
             string registro = cmbLegajo.SelectedItem + "|" + cmbDia.SelectedItem + "|" + cmbHoras.SelectedItem;
-            fileHelper.ModificacionRegistro(listBox1.SelectedIndex, registro);
+            fileHelper.ModificacionRegistro(listBox1.SelectedIndex, registro, true);
             this.Mostrar();
             this.Cancelar();
         }

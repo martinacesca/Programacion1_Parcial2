@@ -74,6 +74,28 @@ namespace Archivos
             }
             return true;
         }
+        private bool ExisteLegajo(int legajoInsertar)
+        {
+            FileStream archivo = new FileStream(this.nombreArchivo, FileMode.OpenOrCreate);
+            StreamReader lector = new StreamReader(archivo);
+            string linea = lector.ReadLine();
+            while (linea != null)
+            {
+                int legajo = int.Parse(linea.Split('|')[0]);
+                if (legajo == legajoInsertar)
+                {
+                    lector.Close();
+                    archivo.Close();
+                    MessageBox.Show($"Ya existe un empleado con legajo número {legajoInsertar}");
+                    return true;
+                }
+                linea = lector.ReadLine();
+            }
+            lector.Close();
+            archivo.Close();
+            return false;
+        }
+
         private bool CamposValidos()
         {
             int legajo = 0;
@@ -84,6 +106,7 @@ namespace Archivos
             if (this.ComboBoxVacio(this.cmbCategoria, "la categoria ")) return false;
             if (!this.EsNumerico(this.txtLegajo, ref legajo, "El legajo ")) return false;
             if (!this.EsPositivo(this.txtLegajo, ref legajo, "El legajo ")) return false;
+            if (this.ExisteLegajo(int.Parse(this.txtLegajo.Text))) return false;
             return true;
         }
         #endregion
@@ -104,12 +127,12 @@ namespace Archivos
             FileStream archivo = new FileStream("categorias.txt", FileMode.OpenOrCreate);
             StreamReader lector = new StreamReader(archivo);
             string linea = lector.ReadLine();
-            string[] datos = linea.Split('|');
+
             while (linea != null)
             {
+                string[] datos = linea.Split('|');
                 cmbCategoria.Items.Add(datos[0]);
                 linea = lector.ReadLine();
-                if (linea != null) datos = linea.Split('|');
             }
             lector.Close();
             archivo.Close();
@@ -160,7 +183,7 @@ namespace Archivos
         {
             if (!this.CamposValidos()) return;
             string registro = txtLegajo.Text + "|" + cmbCategoria.SelectedItem.ToString() + "|" + txtApellido.Text + "|" + txtNombre.Text;
-            fileHelper.AltaRegistro(registro);
+            fileHelper.AltaRegistroOrdenado(registro);
             this.Mostrar();
             this.Cancelar();
         }
@@ -168,7 +191,7 @@ namespace Archivos
         {
             if (!this.CamposValidos()) return;
             string registro = txtLegajo.Text + "|" + cmbCategoria.SelectedItem.ToString() + "|" + txtApellido.Text + "|" + txtNombre.Text;
-            fileHelper.ModificacionRegistro(listBox1.SelectedIndex, registro);
+            fileHelper.ModificacionRegistro(listBox1.SelectedIndex, registro, true);
             this.Mostrar();
             this.Cancelar();
         }
@@ -197,7 +220,6 @@ namespace Archivos
 
             string linea = lector.ReadLine();
             string[] datos;
-            if (linea != null) datos = linea.Split('|');
             while (linea != null)
             {
                 datos = linea.Split('|');

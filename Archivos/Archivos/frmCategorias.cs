@@ -106,7 +106,7 @@ namespace Archivos
             this.listBox1.Items.Clear();
             while (linea != null)
             {
-                this.listBox1.Items.Add(linea);
+                this.listBox1.Items.Add(linea.Replace("|", " "));
                 linea = lector.ReadLine();
             }
             lector.Close();
@@ -122,7 +122,7 @@ namespace Archivos
         private void SelectedListbox()
         {
             string registro = listBox1.SelectedItem.ToString();
-            string[] datos = registro.Split('|');
+            string[] datos = registro.Split(' ');
             this.txtCategoria.Text = datos[0];
             this.txtValor.Text = datos[1];
             this.Editar(true);

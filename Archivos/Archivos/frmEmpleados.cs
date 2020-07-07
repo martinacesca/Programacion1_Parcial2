@@ -106,7 +106,6 @@ namespace Archivos
             if (this.ComboBoxVacio(this.cmbCategoria, "la categoria ")) return false;
             if (!this.EsNumerico(this.txtLegajo, ref legajo, "El legajo ")) return false;
             if (!this.EsPositivo(this.txtLegajo, ref legajo, "El legajo ")) return false;
-            if (this.ExisteLegajo(int.Parse(this.txtLegajo.Text))) return false;
             return true;
         }
         #endregion
@@ -145,7 +144,7 @@ namespace Archivos
             this.listBox1.Items.Clear();
             while (linea != null)
             {
-                this.listBox1.Items.Add(linea);
+                this.listBox1.Items.Add(linea.Replace("|", " "));
                 linea = lector.ReadLine();
             }
             lector.Close();
@@ -157,11 +156,12 @@ namespace Archivos
             btnBaja.Enabled = estado;
             btnModificacion.Enabled = estado;
             btnCancelar.Enabled = estado;
+            txtLegajo.Enabled = !estado;
         }
         private void SelectedListbox()
         {
             string registro = listBox1.SelectedItem.ToString();
-            string[] datos = registro.Split('|');
+            string[] datos = registro.Split(' ');
             this.txtLegajo.Text = datos[0];
             this.cmbCategoria.SelectedIndex = this.cmbCategoria.FindStringExact(datos[1]);
             this.txtApellido.Text = datos[2];
@@ -182,6 +182,7 @@ namespace Archivos
         private void Alta()
         {
             if (!this.CamposValidos()) return;
+            if (this.ExisteLegajo(int.Parse(txtLegajo.Text))) return;
             string registro = txtLegajo.Text + "|" + cmbCategoria.SelectedItem.ToString() + "|" + txtApellido.Text + "|" + txtNombre.Text;
             fileHelper.AltaRegistroOrdenado(registro);
             this.Mostrar();

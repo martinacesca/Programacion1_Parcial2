@@ -130,7 +130,7 @@ namespace Archivos
             this.listBox1.Items.Clear();
             while (linea != null)
             {
-                this.listBox1.Items.Add(linea);
+                this.listBox1.Items.Add(linea.Replace("|", " "));
                 linea = lector.ReadLine();
             }
             lector.Close();
@@ -146,7 +146,7 @@ namespace Archivos
         private void SelectedListbox()
         {
             string registro = listBox1.SelectedItem.ToString();
-            string[] datos = registro.Split('|');
+            string[] datos = registro.Split(' ');
             this.cmbLegajo.SelectedIndex = this.cmbLegajo.FindStringExact(datos[0]);
             this.cmbDia.SelectedIndex = this.cmbDia.FindStringExact(datos[1]);
             this.cmbHoras.SelectedIndex = this.cmbHoras.FindStringExact(datos[2]);
